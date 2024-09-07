@@ -20,11 +20,12 @@ html {
 
 a {
     text-decoration: none;
+    transition: 150ms;
 }
 
 a:hover {
-
-    color: green;
+    transition: 150ms;
+    color: rgb(64, 179, 64);
 }
 
 #page {
@@ -46,6 +47,12 @@ a:hover {
 
 .BLUUUUUU {
     color: rgb(38, 137, 218);
+    transition: 120ms;
+}
+
+.BLUUUUUU:hover {
+    color: rgb(113, 156, 190);
+    transition: 120ms;
 }
 
 #kekw {
@@ -56,4 +63,20 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
