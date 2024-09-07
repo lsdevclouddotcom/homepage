@@ -1,10 +1,10 @@
 import { Component, ReactNode } from "react";
 
-export class Sidebar extends Component {
+export class Navbar extends Component {
 
     render(): ReactNode {
 
-        return <div id="sidebar"></div>
+        return <div id="navbar"></div>
     }
 
 }
