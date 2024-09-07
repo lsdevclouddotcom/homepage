@@ -17,6 +17,7 @@ const router = createBrowserRouter([
         element: <Contact />
     }
 ])
+document.title = "LSDevCloud.com";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
