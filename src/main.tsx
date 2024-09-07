@@ -4,11 +4,16 @@ import Home from './routes/Home.tsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Navbar } from './components/Navbar.tsx'
+import Contact from './routes/Contact.tsx'
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Home />
+    },
+    {
+        path: '/contact',
+        element: <Contact />
     }
 ])
 

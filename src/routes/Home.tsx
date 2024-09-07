@@ -1,7 +1,9 @@
 function Home() {
 
     return (
-        <div id="page">hello world!</div>
+        <div id="page">
+            <h2 className="page-title">Home</h2>
+        </div>
     )
 }
 

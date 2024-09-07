@@ -1,13 +1,29 @@
-:root {
-    color: #fff;
+@font-face {
+    font-family: 'SUSE';
+    src: url('./assets/fonts/SUSE/SUSE-VariableFont_wght.ttf');
+}
+
+* {
+    font-family: 'SUSE';
+    color: white;
+}
+
+.page-title {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
 }
 
 a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #535bf2;
+
+    color: green;
+}
+
+#page {
+
+    margin-top: 6rem;
 }
