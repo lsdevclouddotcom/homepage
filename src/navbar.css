@@ -1,0 +1,19 @@
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+    background-color: #2c2c2c;
+}
+
+.navbar-title {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.navbar-link {
+
+    margin-left: 3rem;
+    display: inline-block;
+}
