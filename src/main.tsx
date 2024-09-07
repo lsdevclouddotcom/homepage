@@ -16,7 +16,8 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />
     }
-])
+]);
+
 document.title = "LSDevCloud.com";
 
 createRoot(document.getElementById('root')!).render(
