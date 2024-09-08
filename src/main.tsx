@@ -8,6 +8,7 @@ import Contact from './routes/Contact.tsx'
 import { Footer } from './components/Footer.tsx'
 import About from './routes/About.tsx'
 import NotFound from './routes/error/NotFound.tsx'
+import Legal from './routes/Legal.tsx'
 
 const router = createBrowserRouter([
     {
@@ -23,12 +24,14 @@ const router = createBrowserRouter([
         element: <About />
     },
     {
+        path: '/legal',
+        element: <Legal />
+    },
+    {
         path: '*',
         element: <NotFound />
     }
 ]);
-
-document.title = "LSDevCloud.com";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
