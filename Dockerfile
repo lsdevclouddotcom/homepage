@@ -12,9 +12,12 @@ RUN npm install
 # install vite
 RUN npm i -g vite 
 
+# build
+RUN npm run build
+
 # copy all other shit
 COPY . .
 
 # expose port 
 EXPOSE 8080
-CMD ["vite"]
+CMD ["serve -s dist"]
