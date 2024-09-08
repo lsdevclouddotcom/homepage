@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Navbar } from './components/Navbar.tsx'
 import Contact from './routes/Contact.tsx'
 import { Footer } from './components/Footer.tsx'
+import About from './routes/About.tsx'
+import NotFound from './routes/error/NotFound.tsx'
 
 const router = createBrowserRouter([
     {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
     {
         path: '/contact',
         element: <Contact />
+    },
+    {
+        path: '/about',
+        element: <About />
+    },
+    {
+        path: '*',
+        element: <NotFound />
     }
 ]);
 
