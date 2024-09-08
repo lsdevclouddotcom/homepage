@@ -28,6 +28,10 @@ a:hover {
     color: rgb(64, 179, 64);
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 #page {
 
     margin-top: 6rem;
@@ -69,10 +73,6 @@ h3 {
     font-size: 1.6rem;
 }
 
-.footer-react-icon {
-
-    height: 1.4rem;
-}
 
 #background-video {
     width: 100vw;

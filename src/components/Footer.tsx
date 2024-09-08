@@ -9,8 +9,12 @@ export class Footer extends Component {
         return <div id="footer">
             <div id="footer-spacer" className="spacer" />
             <div id="footer-content">
-                <h2>This atrocity is <a href={constants.repoUrl}>open source</a>.</h2>
-                <h2>Made with ☕ and <img src="/react.svg" className="footer-react-icon" />.</h2>
+                <div className="footer-links">
+                    <h2><a className="underline" href="/legal">Legal</a></h2>
+                </div>
+
+                <h2><i>This atrocity is <a href={constants.repoUrl}>open source</a>.</i></h2>
+                <h4>Made with ☕ and <img src="/react.svg" className="footer-react-icon" />.</h4>
             </div>
         </div>
     }
