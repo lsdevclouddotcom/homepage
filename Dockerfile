@@ -1,23 +1,17 @@
 FROM node:18-alpine
 
-# set working directory
-WORKDIR /dist
+WORKDIR /app
 
-# copy files
 COPY package*.json ./
 
-# install all required packages
 RUN npm install
 
-# install vite
-RUN npm i -g vite 
-
-# build
-RUN npm run build
-
-# copy all other shit
 COPY . .
 
-# expose port 
+RUN npm run build
+
+RUN npm install -g serve
+
 EXPOSE 8080
-CMD ["serve -s dist"]
+
+CMD ["serve", "-s", "dist", "-l", "8080"]
